@@ -26,20 +26,21 @@
 .manifesto-content{
   line-height: 140%;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  gap: 2px;
+  gap: 0.5em;
   text-align: justify;
-  padding-right: 1rem;
 }
 
 .manifesto-content div{
-  width: 448px;
-  height: 110px;
+  width: 21em;
+  height: 8.25em;
 }
 
 .manifesto-content div span{
+  position: relative;
+  top: 0.5em;
   color: var(--bg-dark);
   font-weight: 900;
 }
