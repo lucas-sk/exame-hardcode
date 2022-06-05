@@ -1,0 +1,29 @@
+.hero{
+  background-color: var(--bg-hero);
+  width: 100%;
+  height: calc(100% - 35em);
+  padding-left: 1em;
+}
+
+.hero h1{
+  font-size: 1.75em;
+  line-height: normal;
+  width: 305px;
+  margin-bottom: 2em;
+}
+
+.hero h1{
+
+}
+
+h1 span{
+  color: var(--bg-red);
+}
+
+.more-know{
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--text-white);
+  font-size: 1.125em;
+}

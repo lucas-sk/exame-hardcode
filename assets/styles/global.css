@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --font: Montserrat (medium, black, semibold, regular, extrabold);
+  --bg-red: #E73634;
+  --bg-dark: #0E0E0E;
+  --bg-hero: #161616;
+  --text-white: #FFF;
+  --text-dark: #000;
+}
+
+body {
+  font-family: Montserrat;
+  font-size: 1em;
+  max-width: 100vw;
+  line-height: 140%;
+  overflow: overlay;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  width: 11em; 
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
