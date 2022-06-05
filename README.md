@@ -12,3 +12,5 @@ text-white = #FFF
 text-dark = #000
 
 depois de terminar a primeira tela, deu para notar que muitos itens que só tá dispónivel para versão desktop, para evitar estilos desnecessários. é melhor utilizar o workflow mobile first.
+
+lembra-se de alterar o tamanho da troca de imagens e o tamanhos da letra
