@@ -5,29 +5,41 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .manifesto img{
-  width: clamp(336px, 50%, 992px);
-  height: 240px;
-  max-height: 407px;
+  position: relative;
+  bottom: -1.2em;
+}
+
+.manifesto > span{
+  position: relative;
+  right: 2.5em;
+  bottom: 0.2em;
+  width: 171px;  
+  font-size: 26px;
+  font-weight: 900;
 }
 
 .manifesto-content{
+  line-height: 140%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 972px;
-  margin: 0 auto;
-  gap: 30px;
+  gap: 2px;
+  text-align: justify;
+  padding-right: 1rem;
 }
 
 .manifesto-content div{
   width: 448px;
-  height: 80px;
+  height: 110px;
 }
 
 .manifesto-content div span{
   color: var(--bg-dark);
+  font-weight: 900;
 }
