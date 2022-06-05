@@ -1,23 +1,33 @@
 .hero{
   background-color: var(--bg-hero);
   width: 100%;
-  height: calc(100% - 35em);
+  min-height: 35vw;
   padding-left: 1em;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.hero div{
+  font-size: 1.125em;
+  font-weight: medium; 
+}
+
+h1 span{
+  color: var(--bg-red);
 }
 
 .hero h1{
   font-size: 1.75em;
   line-height: normal;
   width: 305px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  font-weight: extrabold;
 }
 
-.hero h1{
-
-}
-
-h1 span{
-  color: var(--bg-red);
+.hero h2{
+  font-size: 1.125em;
+  font-weight: medium; 
 }
 
 .more-know{

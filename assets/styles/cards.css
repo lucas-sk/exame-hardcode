@@ -1,7 +1,7 @@
 .cards{
   background-color: var(--bg-dark);
   width: 100%;
-  min-height: 28em;
+  min-height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,7 @@
 .card:last-child {
   position: relative;
   z-index: 1;
+  
 }
 
 /* .cards::after{

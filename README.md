@@ -10,3 +10,5 @@ bg-dark = #0E0E0E
 
 text-white = #FFF
 text-dark = #000
+
+depois de terminar a primeira tela, deu para notar que muitos itens que só tá dispónivel para versão desktop, para evitar estilos desnecessários. é melhor utilizar o workflow mobile first.
