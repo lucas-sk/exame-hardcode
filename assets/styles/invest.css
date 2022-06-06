@@ -1,0 +1,40 @@
+:root{
+  --swiper-theme-color: var(--bg-red);
+}
+
+.invest{
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  padding-bottom: 5em;
+}
+
+.swiper-slide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 1em;
+}
+
+.swiper-slide h3{
+  font-size: 22px;
+  padding: 0.5em 0;
+}
+
+.swiper-pagination-progressbar{
+  position: relative;
+  bottom: -1em;
+  left: 1em;
+  background-color: #5b5b5b;
+  margin-bottom: 1em;
+}
+
+.content p{
+  margin: 1.5em 0;
+}
+
+.content + img{
+  margin-bottom: 2em;
+}
+
