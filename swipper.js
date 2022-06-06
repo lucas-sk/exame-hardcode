@@ -1,11 +1,9 @@
-const swiper = new Swiper('.swiper', {
+const swiperInvest = new Swiper('.invest', {
   // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
+  direction: 'horizontal',
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
+    type: "progressbar"
   },
 
   // Navigation arrows
@@ -13,9 +11,17 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+const swiperCarrousel = new Swiper(['.carrousel', '.carrousel2'], {
+  slidesPerView: 2.5,
+  spaceBetween: 10,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  vspaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
   },
 });
