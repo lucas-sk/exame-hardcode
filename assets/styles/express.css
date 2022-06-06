@@ -1,0 +1,47 @@
+.express{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.express-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em 1em;
+  color: var(--text-white);
+}
+
+.express-content h4{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.express-content picture img{
+  width: 100vw;
+}
+
+.express-content hr{
+  width: 90px;
+  border: 2px solid;
+}
+
+.mvp,
+.fintech{
+  background-color: var(--bg-dark)
+}
+.mvp hr,
+.fintech hr{
+  border-color: var(--bg-red);
+}
+
+.head,
+.project{
+  background-color: var(--bg-red);
+}
+.head hr,
+.project hr{
+  border-color: var(--bg-dark);
+}
