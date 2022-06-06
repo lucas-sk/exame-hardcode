@@ -1,0 +1,28 @@
+.carrousel,
+.carrousel2
+{
+  min-height: 20vh;
+  width: 100%;
+  background-color: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.carrousel2{
+  padding-bottom: 2em;
+  bottom: 0.75em;
+  top: 0;
+}
+
+.carrousel-wrapper div{
+  width: 142px;
+  height: 142px;
+  background-color: #fff
+}
