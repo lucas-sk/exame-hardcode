@@ -39,7 +39,6 @@
 .card:last-child {
   position: relative;
   z-index: 1;
-  
 }
 
 /* .cards::after{
