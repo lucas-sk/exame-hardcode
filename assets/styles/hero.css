@@ -41,4 +41,15 @@ h1 span{
   gap: 0.5em;
   color: var(--text-white);
   font-size: 1.125em;
+  padding-bottom: 1em
+}
+
+@media (min-width: 768px) {
+  .img-hero{
+    position: relative;
+    visibility: unset;
+    width: 50vw;
+    margin: 1em 0;
+    z-index: 0;
+  }
 }
