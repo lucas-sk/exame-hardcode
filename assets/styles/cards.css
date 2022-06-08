@@ -5,9 +5,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 4em;
   flex-flow: column wrap;
   gap: 2em;
+  margin: 1em 0 4em;
+  padding: 1em;
 }
 
 .card {
@@ -17,23 +18,23 @@
   flex-direction: column;
   justify-content: space-around;
   background-color: var(--bg-hero);
-  color: var(--text-white);
   line-height: 145%;
   padding: 1em;
 }
 
 .card hr{
   border: 3px solid var(--bg-red); 
+  background-color: var(--bg-red);
   width: 85px;
 }
 
 .card:first-child {
-  background-color: red;
-  color: var(--text-white)
+  background-color: var(--bg-red);
 }
 
 .card:first-child hr{
-  border-color: var(--bg-dark)
+  border-color: var(--bg-dark);
+  background-color: var(--bg-dark);
 }
 
 .card:last-child {
@@ -51,3 +52,15 @@
   right: 98px;
   bottom: 90px;
 } */
+
+@media (min-width: 768px) {
+  .cards{
+    flex-flow: row wrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards{ 
+    flex-flow: row nowrap;
+  }
+}
