@@ -5,18 +5,16 @@ nav{
   width: 100%;
   height: 8vh;
   background-color: var(--bg-hero);
-  padding: 2em;
+  padding: 4em 0 4em;
+}
+
+.logo-hardcode{
+  width: 32px;
 }
 
 .nav-list{
   display: flex;
   gap: 3em;
-  list-style: none;
-}
-
-.nav-list a{
-  text-decoration: none;
-  color: var(--text-white)
 }
 
 .btn-wpp{
@@ -40,16 +38,17 @@ nav{
 @media (max-width: 999px){
   .nav-list{
     position: absolute;
-    top: 8vh;
+    top: 10vh;
     right: 0;
     width: 50vh;
     height: 92vh;
-    background: (--bg-hero);
+    background: #0E0E0E;
     flex-direction: column;
     align-items: center;
     justify-content:space-around;
     transform: translateX(100%);
     transition: transform 0.3s ease-in; 
+    z-index: 1;
   }
   .nav-list li{
     margin-left: 0;
@@ -87,3 +86,4 @@ nav{
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 } 
+
