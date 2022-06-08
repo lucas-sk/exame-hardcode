@@ -5,7 +5,11 @@
 }
 
 :root{
-  --font: Montserrat (medium, black, semibold, regular, extrabold);
+  --medium: 400;
+  --regular: 500;
+  --semibold: 600;
+  --extrabold: 700;
+  --black: 900;
   --bg-red: #E73634;
   --bg-dark: #0E0E0E;
   --bg-hero: #161616;
@@ -31,6 +35,15 @@ button{
   align-items: center;
   justify-content: center;
   gap: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
 }
 
 @media (max-width: 999px){
