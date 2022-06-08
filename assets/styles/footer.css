@@ -1,5 +1,5 @@
 footer{
-  min-height: 80vh;
+  min-height: 60vh;
   width: 100%;
   background-color: var(--bg-dark);
   color: #fff;
@@ -8,6 +8,10 @@ footer{
   justify-content: flex-end;
   flex-direction: column;
   gap: 2em;
+  background-image: url(../img/rhcp-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 footer ul{
@@ -21,7 +25,7 @@ footer a{
 
 footer * {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .title-section{
@@ -30,6 +34,7 @@ footer * {
   align-items: center;
   font-weight: 800;
   order: 1;
+  margin-bottom: 2em;
 }
 
 .title-section h3{
@@ -63,25 +68,12 @@ footer * {
 .hard-code,
 .services{
   flex-flow: column wrap; 
-  flex-grow: 1;
-  flex-basis: 50%;
+  flex-basis: 100%;
   gap: 10px;
 }
 .hard-code p,
 .services p{
   font-weight: 900;
-}
-
-footer picture{
-  position: absolute; 
-  z-index: 1;
-}
-
-.logo-rh{
-  position: absolute; /* <== relative */
-  right: 1em;
-  top: 12.8em;
-  z-index: 0;
 }
 
 .copyright{
