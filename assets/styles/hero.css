@@ -2,7 +2,7 @@
   background-color: var(--bg-hero);
   width: 100%;
   min-height: 35vw;
-  padding-left: 1em;
+  padding: 1em;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -28,6 +28,11 @@ h1 span{
 .hero h2{
   font-size: 1.125em;
   font-weight: medium; 
+}
+
+.img-hero{
+  position: relative;
+  visibility: hidden;
 }
 
 .more-know{
