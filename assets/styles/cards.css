@@ -40,8 +40,8 @@
   position: relative;
   z-index: 1;
 }
-
-/* .cards::after{
+/* 
+.cards::after{
   content: " ";
   position: absolute;
   width: 16em;
