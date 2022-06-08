@@ -6,46 +6,17 @@
 }
 
 
-.mvp,
-.fintech{
-  background-color: var(--bg-dark)
-}
-.mvp hr,
-.fintech hr{
-  border-color: var(--bg-red);
-}
-
-.mvp path,
-.fintech path{
-  fill:var(--bg-dark)
-}
-
-.head,
-.project{
-  background-color: var(--bg-red);
-}
-.head hr,
-.project hr{
-  border-color: var(--bg-dark);
-}
-
-.head button,
-.project button{
-  color: var(--bg-red);
-}
-
 .express-content{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 1em 2em;
-  color: var(--text-white);
 }
 
 .express-content h4{
   font-size: 20px;
-  font-weight: 900;
+  font-weight: var(--black);
   margin: 2em 0 1em;
 }
 
@@ -61,4 +32,50 @@
 
 .express-content p{
   margin: 1em 0;
+}
+
+.mvp,
+.fintech{
+  background-color: var(--bg-dark)
+}
+.mvp hr,
+.fintech hr{
+  border-color: var(--bg-red);
+  background-color: var(--bg-red);
+}
+
+.mvp path,
+.fintech path{
+  fill:var(--bg-dark)
+}
+
+.head,
+.project{
+  background-color: var(--bg-red);
+}
+.head hr,
+.project hr{
+  border-color: var(--bg-dark);
+  background-color: var(--bg-dark);
+}
+
+.head button,
+.project button{
+  color: var(--bg-red);
+}
+
+@media(min-width: 768px){
+  .express-content picture img{
+    width: 50vw;
+    height: 100%;
+  }
+  .mvp,
+  .fintech{
+    flex-direction: row;
+    gap: 1em;
+  }
+  .head,
+  .project{
+    flex-direction: row-reverse;
+  }
 }
