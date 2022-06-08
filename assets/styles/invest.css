@@ -6,7 +6,6 @@
   min-width: 100%;
   min-height: 100vh;
   background-color: var(--bg-dark);
-  color: var(--text-white);
   padding-bottom: 5em;
 }
 
