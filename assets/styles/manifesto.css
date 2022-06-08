@@ -1,12 +1,11 @@
 .manifesto{
   background-color: var(--bg-red);
-  color: var(--text-white);
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 2em;
 }
 
 .manifesto img{
@@ -18,13 +17,12 @@
   position: relative;
   right: 2.5em;
   bottom: 0.2em;
-  width: 171px;  
-  font-size: 26px;
-  font-weight: 900;
+  width: 7em;
+  font-size: 1.625em;
+  font-weight: var(--black);
 }
 
 .manifesto-content{
-  line-height: 140%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -42,5 +40,15 @@
   position: relative;
   top: 0.5em;
   color: var(--bg-dark);
-  font-weight: 900;
+  font-weight: var(--black);
+}
+
+@media (min-width: 768px) {
+  .manifesto img{
+    width: 100%;
+  }
+  .manifesto-content{
+    flex-flow: row wrap;
+    gap: 1em;
+  }
 }
