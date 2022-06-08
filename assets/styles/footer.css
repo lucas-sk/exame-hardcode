@@ -3,7 +3,11 @@ footer{
   width: 100%;
   background-color: var(--bg-dark);
   color: #fff;
-  padding: 0 1em;;
+  padding: 2em 1em;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 2em;
 }
 
 footer ul{
@@ -15,11 +19,17 @@ footer a{
   color: #fff;
 }
 
+footer * {
+  position: relative;
+  z-index: 1;
+}
+
 .title-section{
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 800;
+  order: 1;
 }
 
 .title-section h3{
@@ -34,20 +44,20 @@ footer a{
   width: 40px;
 }
 
-.midias + div{
-  display: flex;
-}
-
+.midias, 
+.midias + div,
 .hard-code,
-.services,
-.midias{
+.services{
   display: flex;
 }
 
 .midias{
   gap: 2em;
-  flex-grow: 2;
-  flex-basis: 100%;
+  order: 3;
+}
+
+.midias + div{
+  order: 2
 }
 
 .hard-code,
@@ -55,6 +65,11 @@ footer a{
   flex-flow: column wrap; 
   flex-grow: 1;
   flex-basis: 50%;
+  gap: 10px;
+}
+.hard-code p,
+.services p{
+  font-weight: 900;
 }
 
 footer picture{
@@ -67,4 +82,12 @@ footer picture{
   right: 1em;
   top: 12.8em;
   z-index: 0;
+}
+
+.copyright{
+  border-top: 1px solid #fff;
+  padding-top: 1em;
+  font-size: 14px;
+  text-align:center;
+  order: 4;
 }
