@@ -1,12 +1,10 @@
 const swiperInvest = new Swiper('.invest', {
-  // Optional parameters
   direction: 'horizontal',
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar"
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
