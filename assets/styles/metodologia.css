@@ -9,10 +9,19 @@
 }
 
 .metodologia h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   position: relative;
-  top: 2em;
-  margin-bottom: 2em;
+  top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.metodologia picture{
+  margin: 0 auto;
+}
+
+.img-metodologia {
+  width: 100%;
+  height: 100%;
 }
 
 .metodologia-content{
@@ -25,10 +34,9 @@
   visibility: hidden;
 }
 
-
 .metodologia-content div{
-  width: 20em;
-  height: 9.2em;
+  width: 20rem;
+  height: 9.2rem;
 }
 
 .metodologia-content + picture{
@@ -36,9 +44,40 @@
   top: 0.4em;
 }
 
-
 @media (min-width: 768px){
   .metodologia h3 {
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .img-metodologia {
+    width: 50rem;
+    height: 5rem;
+  }
+  .metodologia-content{
+    position: relative;
+    visibility: unset;
+    flex-direction: row;
+    width: 80vw;
+    gap: 1rem;
+  }
+
+  .metodologia:last-child img{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px){
+  .img-metodologia {
+    width: 100%;
+    height: 100%;
+  }
+  .metodologia h3 {
+    margin: 5rem 0;
+    font-size: 3.5rem;
+  }
+  .metodologia-content{
+    bottom: 4rem;
   }
 }
