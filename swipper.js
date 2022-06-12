@@ -13,7 +13,7 @@ const swiperInvest = new Swiper('.invest', {
 
 const swiperCarrousel = new Swiper(['.carrousel', '.carrousel2'], {
   slidesPerView: 2.5,
-  spaceBetween: 10,
+  spaceBetween: 7,
   loop: true,
   loopFillGroupWithBlank: true,
   vspaceBetween: 30,
@@ -22,4 +22,18 @@ const swiperCarrousel = new Swiper(['.carrousel', '.carrousel2'], {
     delay: 3000,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 15,
+    },
+    1440: {
+      slidesPerView: 6,
+      spaceBetween: 15,
+    },
+  }
 });
