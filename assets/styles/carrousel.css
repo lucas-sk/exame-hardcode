@@ -21,8 +21,13 @@
   top: 0;
 }
 
-.carrousel-wrapper div{
-  width: 142px;
-  height: 142px;
+.carrousel-wrapper .swiper-slide{
+  width: clamp(142px, 50%, 228px);
+  height: clamp(142px, 50%, 228px); 
   background-color: #fff
+}
+
+.carrousel-wrapper img{
+  width: 100%;
+  height: 100%; 
 }
