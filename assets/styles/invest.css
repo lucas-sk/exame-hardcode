@@ -6,34 +6,120 @@
   min-width: 100%;
   min-height: 100vh;
   background-color: var(--bg-dark);
-  padding-bottom: 5em;
 }
 
 .swiper-slide{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2em 1em;
+  padding: 1rem;
 }
 
-.swiper-slide h3{
+.title h3{
   font-size: 22px;
-  padding: 0.5em 0;
+  padding: 0.5rem 0;
 }
 
 .swiper-pagination-progressbar{
   position: relative;
-  bottom: -1em;
-  left: 1em;
+  bottom: -1rem;
+  left: 1rem;
   background-color: #5b5b5b;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .content p{
-  margin: 1.5em 0;
+  margin: 1.5rem 0;
 }
 
-.content + img{
-  margin-bottom: 2em;
+.controls button{
+  width: fit-content;
+  height: 2rem;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #FFF;
+}
+.controls{ 
+  display: none;
 }
 
+.grafico-invest{
+  width: 100%;
+  height: 14rem;
+}
+
+@media (min-width: 1440px){
+  .invest{
+    height: 70vh;
+  }
+
+  .vertical-role{
+    height: 2rem;
+    margin: 0 1rem;
+    border-left: 1px solid #7c7c7c;
+  }
+
+  .invest .swiper-slide{  
+    display: grid;
+    grid-template-columns: 1fr 9.25rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2rem 0;
+    grid-auto-flow: rows;
+    padding: 0 10rem;
+  }
+  
+  .swiper-pagination { 
+    grid-area: 3 / 1 / 4 / 3; 
+    margin-bottom: 2rem;
+    align-self: center;
+  }
+
+  .invest span { 
+    grid-area: 3 / 1 / 4 / 3; 
+    text-align: right;
+    align-self: center;
+  }
+
+  .content { 
+    grid-area: 2 / 1 / 3 / 3; 
+    align-self: center;
+    display: flex;
+    gap: 1.5rem; 
+  }
+
+  .content div:first-child { 
+    border-right: 1px solid;
+    padding-right: 1rem;
+  }
+  .content *{ 
+    align-self: center
+  }
+  
+  .grafico-invest { 
+    grid-area: 2 / 2 / 3 / 3; 
+    width: 35rem;
+    height: 22.2rem;
+    align-self: center;
+    justify-self: end;
+  }
+  
+  .title { 
+    grid-area: 1 / 1 / 2 / 2; 
+    align-self: center;
+    font-size: 1.5rem;
+    width: 36rem;
+  }
+
+  .title h3{
+    line-height: 100%;
+    font-size: 2rem;
+    color: var(--bg-red);
+  }
+  
+  .controls {
+    grid-area: 1 / 2 / 2 / 3; 
+    justify-self: end;
+    align-items: center;
+    display: flex;
+  }
+}
