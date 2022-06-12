@@ -5,33 +5,35 @@
   flex-direction: column;
 }
 
-
 .express-content{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 1em 2em;
 }
 
-.express-content h4{
-  font-size: 20px;
-  font-weight: var(--black);
-  margin: 2em 0 1em;
-}
-
-.express-content picture img{
-  width: 100vw;
-  height: 322.27px;
-}
-
-.express-content hr{
-  width: 90px;
-  border: 1px solid;
+.express-content > div{
+  padding: 1rem;
 }
 
 .express-content p{
-  margin: 1em 0;
+  margin-bottom: 1rem;
+}
+
+.express-content h4{
+  font-size: 1.25rem;
+  font-weight: var(--black);
+}
+
+.express-content img{
+  width: 100%;
+  height: 20rem;
+} 
+
+.express-content hr{
+  width: 6rem;
+  border: 1px solid;
+  margin: 1rem 0;
 }
 
 .mvp,
@@ -64,18 +66,49 @@
   color: var(--bg-red);
 }
 
-@media(min-width: 768px){
-  .express-content picture img{
-    width: 50vw;
+@media (min-width: 1024px){
+  .express-content{
+    flex-direction: row
+  }
+
+  .express-content > div{
+    padding: 0 2rem;
+  }
+
+  .express-content img{
+    width: 50%;
     height: 100%;
-  }
-  .mvp,
-  .fintech{
-    flex-direction: row;
-    gap: 1em;
-  }
+  } 
+  
+  .express-content p{
+    margin-bottom: 0.5rem;
+  } 
+  
   .head,
   .project{
     flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1440px){
+  .express-content > div{
+    padding: 0 5rem;
+  }
+
+  .express-content img{
+    width: 40rem;
+    height: 34.4rem;
+  } 
+  
+  .express-content p{
+    margin-bottom: 1rem;
+  }
+
+  .express-content h4{
+    font-size: 2.25rem
+  }
+
+  .express-content hr{
+    width: 12rem;
   }
 }
