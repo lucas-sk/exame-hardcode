@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HardCode</title>
+    <meta name="description" content="DESENVOLVIMENTO DE TECNOLOGIA
+    Para startups sem time de tecnologia.">
     <link
       rel="shortcut icon"
       href="/assets/icon/favicon.svg"
@@ -152,7 +154,7 @@
           srcset="./assets/img/metodologia.png"
           media="(min-width: 1024px)"
         />
-        <img src="./assets/img/metodologia-mobile.png" alt="metodologia IBDD" />
+        <img class="img-metodologia" src="./assets/img/metodologia-mobile.png" alt="metodologia IBDD" />
       </picture>
       <div class="metodologia-content">
         <div>
@@ -235,17 +237,17 @@
             Seu negócio está crescendo porém ainda falta liderança em algum
             setor? Nós te ajudamos com isso!
           </p>
-          <span>GROWTH</span>
+          <strong>GROWTH</strong>
           <p>
             Liderança com décadas de experiência na gestão dos times de produtos
             digitais, marketing e vendas.
           </p>
-          <span>TECH</span>
+          <strong>TECH</strong>
           <p>
             Sabemos o quanto é difícil encontrar um desenvolvedor, ainda mais um
             gestor. Por isso compartilhamos com nossos clientes.
           </p>
-          <span>LEGAL</span>
+          <strong>LEGAL</strong>
           <p>
             Preocupado com a LGPD? Precisa criar acordo de sócios e outros
             contratos? Conte com nossos serviços!
@@ -348,14 +350,24 @@
         </div>
       </div>
     </section>
-    <section class="invest">
+    <section class="invest swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="title">
             <h3>VOLUME DE INVESTIMENTO POR ESTÁGIO</h3>
             <p>Aplicados em startups no Brasil</p>
           </div>
-          <div class="controls"></div>
+          <div class="controls">
+            <button class=".swiper-button-prev">
+              <img src="./assets/icon/prev-slider.svg" alt="arrow prev slider">
+              Anterior
+            </button>
+            <div class="vertical-role"></div>
+            <button class=".swiper-button-next">
+              Próximo
+              <img src="./assets/icon/next-slider.svg" alt="arrow next slider">
+            </button>
+          </div>
           <div class="content">
             <div>
               <p>
@@ -383,11 +395,12 @@
                 empresa: o Nubank.
               </p>
             </div>
+            <img
+              class="grafico-invest"
+              src="./assets/img/grafico.png"
+              alt="Gráfico sobre volume de investimento por estágio"
+            />
           </div>
-          <img
-            src="./assets/img/grafico.png"
-            alt="Gráfico sobre volume de investimento por estágio"
-          />
           <div class="swiper-pagination"></div>
           <span>Fonte: Distrito</span>
         </div>
@@ -396,7 +409,17 @@
             <h3>NÚMERO DE APORTES E VOLUME DE INVESTIMENTOS</h3>
             <p>Aplicados em startups no Brasil</p>
           </div>
-          <div class="controls"></div>
+          <div class="controls">
+            <button class=".swiper-button-prev">
+              <img src="./assets/icon/prev-slider.svg" alt="arrow prev slider">
+              Anterior
+            </button>
+            <div class="vertical-role"></div>
+            <button class=".swiper-button-next">
+              Próximo
+              <img src="./assets/icon/next-slider.svg" alt="arrow next slider">
+            </button>
+          </div>
           <div class="content">
             <div>
               <p>
@@ -418,11 +441,12 @@
                 aproximadamente US$ 9,4 bilhões.
               </p>
             </div>
+            <img
+              class="grafico-invest"
+              src="./assets/img/img-slider2.png"
+              alt="grafico sobre número de aportes e volume de investimentos"
+            />
           </div>
-          <img
-            src="./assets/img/img-slider2.png"
-            alt="grafico sobre número de aportes e volume de investimentos"
-          />
           <div class="swiper-pagination"></div>
           <span>Fonte: Distrito</span>
         </div>
@@ -431,7 +455,17 @@
             <h3>NÚMERO DE APORTES E VOLUME DE INVESTIMENTOS POR SETOR</h3>
             <p>Aplicados em startups no Brasil</p>
           </div>
-          <div class="controls"></div>
+          <div class="controls">
+            <button class=".swiper-button-prev">
+              <img src="./assets/icon/prev-slider.svg" alt="arrow prev slider">
+              Anterior
+            </button>
+            <div class="vertical-role"></div>
+            <button class=".swiper-button-next">
+              Próximo
+              <img src="./assets/icon/next-slider.svg" alt="arrow next slider">
+            </button>
+          </div>
           <div class="content">
             <div>
               <p>
@@ -455,17 +489,19 @@
                 mesmo.
               </p>
             </div>
+            <img
+              class="grafico-invest" 
+              src="./assets/img/img-slider3.png"
+              alt="grafico sobre número de aportes e volume de investimentos por setor"
+            />
           </div>
-          <img
-            src="./assets/img/img-slider3.png"
-            alt="grafico sobre número de aportes e volume de investimentos por setor"
-          />
           <span>Fonte: Distrito</span>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination">
+        </div>
         </div>
       </div>
     </section>
-    <section class="carrousel">
+    <section class="carrousel swiper">
       <div class="swiper-wrapper carrousel-wrapper">
         <div class="swiper-slide">
           <img src="./assets/icon/Vector.svg" alt="image unkown" />
@@ -487,7 +523,7 @@
         </div>
       </div>
     </section>
-    <section class="carrousel2">
+    <section class="carrousel2 swiper">
       <div class="swiper-wrapper carrousel-wrapper">
         <div class="swiper-slide">
           <img src="./assets/icon/Vector.svg" alt="image unkown" />
