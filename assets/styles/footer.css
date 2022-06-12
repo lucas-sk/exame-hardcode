@@ -2,11 +2,11 @@ footer{
   min-height: 60vh;
   width: 100%;
   background-color: var(--bg-dark);
-  padding: 2em 1em;
+  padding: 2rem 1rem;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  gap: 2em;
+  gap: 2rem;
   background-image: url(../img/rhcp-mobile.png);
   background-size: cover;
   background-position: center;
@@ -19,12 +19,12 @@ footer{
   align-items: center;
   font-weight: 800;
   order: 1;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .title-section h3{
-  font-size: 21.32px;
-  margin-bottom: 0.5em;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 .title-section h2{
   font-size: 37.91px;
@@ -42,7 +42,7 @@ footer{
 }
 
 .midias{
-  gap: 2em;
+  gap: 2rem;
   order: 3;
 }
 
@@ -63,8 +63,47 @@ footer{
 
 .copyright{
   border-top: 1px solid #fff;
-  padding-top: 1em;
+  padding-top: 1rem;
   font-size: 14px;
   text-align:center;
   order: 4;
+}
+
+@media (min-width: 1024px) {
+  footer{
+    padding: 2rem 10rem;
+  }
+
+  .title-section img{
+    width: 102px;
+  }
+
+  .midias + div{
+    order: 3;
+    gap: 5rem;
+    margin-left: auto;
+  }
+
+  .midias{
+    position: relative;
+    top: 15rem;
+  }
+  .copyright{
+    text-align: right;
+  }
+}
+@media (min-width: 1440px) {
+  .title-section h3{
+    font-size: 48.45px;
+    margin-bottom: 3rem;
+  }
+  .title-section h2{
+    font-size: 86.14px;
+  }
+
+  footer {
+    background-image: url(../img/rh.png);
+    background-position-x: -38rem;
+    background-position-y: -0rem;  
+  }
 }
