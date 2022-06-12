@@ -6,24 +6,24 @@
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
-  gap: 2em;
-  margin: 1em 0 4em;
-  padding: 1em;
+  gap: 2rem;
+  margin: 1rem 0 4rem;
+  padding: 1rem;
 }
 
 .card {
-  width: 22em;
-  height: 15em;
+  width: 22rem;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: var(--bg-hero);
   line-height: 145%;
-  padding: 1em;
+  padding: 1rem;
 }
 
 .card hr{
-  border: 3px solid var(--bg-red); 
+  border: 2px solid var(--bg-red); 
   background-color: var(--bg-red);
   width: 85px;
 }
@@ -41,17 +41,6 @@
   position: relative;
   z-index: 1;
 }
-/* 
-.cards::after{
-  content: " ";
-  position: absolute;
-  width: 16em;
-  height: 3em;
-  background-color: red;
-  z-index: 0;
-  right: 98px;
-  bottom: 90px;
-} */
 
 @media (min-width: 768px) {
   .cards{
@@ -62,5 +51,21 @@
 @media (min-width: 1024px) {
   .cards{ 
     flex-flow: row nowrap;
+  }
+
+  .cards::after{
+    content: " ";
+    position: absolute;
+    width: 16rem;
+    height: 3rem;
+    background-color: red;
+    z-index: 0;
+    transform: translate(23.5rem, 6.5rem);
+  }
+}
+
+@media (min-width: 1440px) {
+  .cards::after{
+    transform: translate(27.5rem, 6.5rem);
   }
 }
