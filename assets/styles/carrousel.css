@@ -1,7 +1,7 @@
 .carrousel,
 .carrousel2
 {
-  min-height: 20vh;
+  height: 10rem;
   width: 100%;
   background-color: var(--bg-dark);
   display: flex;
