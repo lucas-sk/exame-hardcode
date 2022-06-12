@@ -9,6 +9,8 @@
 }
 
 .manifesto img{
+  width: 21rem;
+  height: 14rem;
   position: relative;
   bottom: -1.2rem;
 }
@@ -46,6 +48,7 @@
 @media (min-width: 768px) {
   .manifesto img{
     width: 100%;
+    height: 34rem;
   }
   .manifesto-content{
     flex-flow: row wrap;
@@ -70,8 +73,14 @@
 
 @media (min-width: 1440px) {
   .manifesto > span{
-    width: 8.25rem;
+    width: 27rem;
     font-size: 3.5rem;
     line-height: 100%;
+    bottom: 1rem;
+    right: 15.5rem;
+  }
+  .manifesto img{
+    width: 62rem;
+    height: 25rem;
   }
 }
