@@ -5,20 +5,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em;
+  padding: 2rem;
 }
 
 .manifesto img{
   position: relative;
-  bottom: -1.2em;
+  bottom: -1.2rem;
 }
 
 .manifesto > span{
   position: relative;
-  right: 2.5em;
-  bottom: 0.2em;
-  width: 7em;
-  font-size: 1.625em;
+  right: 1.5rem;
+  bottom: 0.2rem;
+  width: 11rem;
+  font-size: 1.625rem;
   font-weight: var(--black);
 }
 
@@ -27,18 +27,18 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.5rem;
   text-align: justify;
 }
 
 .manifesto-content div{
-  width: 21em;
-  height: 8.25em;
+  width: 21rem;
+  height: 8.25rem;
 }
 
 .manifesto-content div span{
   position: relative;
-  top: 0.5em;
+  top: 0.5rem;
   color: var(--bg-dark);
   font-weight: var(--black);
 }
@@ -49,6 +49,29 @@
   }
   .manifesto-content{
     flex-flow: row wrap;
-    gap: 1em;
+    gap: 1rem;
+  }
+  .manifesto{
+    background-image: url(../img/nota.png);
+    background-repeat: no-repeat;
+    background-position: right 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .manifesto-content{
+    gap: 2rem;
+  }
+  
+  .manifesto-content div{
+    width: 27.5625rem;
+    height: 5.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .manifesto > span{
+    width: 8.25rem;
+    font-size: 3.5rem;
+    line-height: 100%;
   }
 }
