@@ -67,7 +67,7 @@ h1 span{
   .img-hero{
     width: 36rem;
     height: 26rem;
-    transform: translate(10rem, -2rem);
+    transform: translate(14rem, -4rem);
   }
 }
 @media (min-width: 1440px) {
@@ -77,9 +77,6 @@ h1 span{
     background-position: left 7rem;
     background-size: coutain;
     background-repeat: no-repeat;
-  }
-  .hero div{
-    height: unset;
   }
   .hero h1{
     font-size: 4rem;
@@ -91,9 +88,12 @@ h1 span{
     font-weight: normal;
     width: 27rem;
   }
+  .hero div{
+    height: unset;
+  }
 
   .img-hero{
-    transform: translate(19rem, -4rem);
+    transform: translate(19rem, -2.5rem);
     width: 52rem;
     height: 32rem;
   }
