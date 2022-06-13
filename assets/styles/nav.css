@@ -32,7 +32,7 @@ nav{
 .mobile-menu div{
   width: 2rem;
   height: 0.125rem;
-  background: #fff;
+  background: var(--bg-red);
   margin: 0.5rem;
   transition: 0.3s;
 }
