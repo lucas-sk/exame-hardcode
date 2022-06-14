@@ -128,4 +128,12 @@
     align-items: center;
     display: flex;
   }
+  .swiper-button-next, .swiper-button-prev{
+    position: static;
+    margin-top: 0;
+  }
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: unset;
+  }
 }
