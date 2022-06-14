@@ -5,16 +5,13 @@ teste de frontend da hardcode, minha versão da landing page
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
   - [Links](#links)
-  - [Meu Processo](#Meu-Processo)
+- [Meu Processo](#Meu-Processo)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [link utéis](#link-utéis)
 
 ## Overview
-
-### Screenshot
 
 ### Links
 
