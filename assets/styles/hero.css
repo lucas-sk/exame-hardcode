@@ -47,6 +47,11 @@ h1 span{
   font-size: 1.125rem;
   margin-top: auto;
 }
+.more-know img{
+  width: 1.625rem;
+  height: 1.625rem;
+}
+
 @media (min-width: 768px) {
   .hero{
     padding: 2rem;

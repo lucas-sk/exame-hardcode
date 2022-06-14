@@ -23,6 +23,10 @@ nav{
   background-color: var(--bg-red);
   color: var(--text-white);
 }
+.btn-wpp img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
 
 .mobile-menu{
   cursor: pointer;

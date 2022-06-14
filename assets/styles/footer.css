@@ -32,6 +32,7 @@ footer{
 
 .title-section img{
   width: 40px;
+  height: 100%;
 }
 
 .midias, 
@@ -46,6 +47,11 @@ footer{
   order: 3;
 }
 
+.midias img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .midias + div{
   order: 2
 }
@@ -54,7 +60,7 @@ footer{
 .services{
   flex-flow: column wrap; 
   flex-basis: 100%;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .hard-code p,
 .services p{
@@ -64,7 +70,7 @@ footer{
 .copyright{
   border-top: 1px solid #fff;
   padding-top: 1rem;
-  font-size: 14px;
+  font-size: 0.7rem;
   text-align:center;
   order: 4;
 }
@@ -105,5 +111,9 @@ footer{
     background-image: url(../img/rh.png);
     background-position-x: -38rem;
     background-position-y: -0rem;  
+  }
+  .midias img{
+    width: 2rem;
+    height: 2rem;
   }
 }
