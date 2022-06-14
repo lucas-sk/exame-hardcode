@@ -84,8 +84,8 @@
     margin-bottom: 0.5rem;
   } 
   
-  .head,
-  .project{
+  .mvp,
+  .fintech{
     flex-direction: row-reverse;
   }
 }
