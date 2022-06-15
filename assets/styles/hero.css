@@ -35,10 +35,6 @@ h1 span{
   font-weight: medium; 
 }
 
-.img-hero{
-  display: none;
-}
-
 .more-know{
   display: flex;
   align-items: center;
@@ -56,32 +52,20 @@ h1 span{
   .hero{
     padding: 2rem;
     flex-direction: row;
-  }
-  .img-hero{
-    display: block;
-    width: 28rem;
-    height: 24rem;
-    position: absolute;
-    transform: translate(10rem, -2rem);
+    background-image: url(../img/rh-black.png), url(../img/metalica-em-um-show.webp);
+    background-position: left, right;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 @media (min-width: 1024px) {
   .hero{
     padding: 2rem 5rem;
   }
-  .img-hero{
-    width: 36rem;
-    height: 26rem;
-    transform: translate(14rem, -4rem);
-  }
 }
 @media (min-width: 1440px) {
   .hero{
     padding: 2rem 10rem;
-    background-image: url(../img/rh-black.png);
-    background-position: left 7rem;
-    background-size: coutain;
-    background-repeat: no-repeat;
   }
   .hero h1{
     font-size: 4rem;
@@ -95,11 +79,5 @@ h1 span{
   }
   .hero div{
     height: unset;
-  }
-
-  .img-hero{
-    transform: translate(19rem, -2.5rem);
-    width: 52rem;
-    height: 32rem;
   }
 }
